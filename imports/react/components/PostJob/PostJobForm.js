@@ -6,6 +6,9 @@ import { Form, Field } from 'simple-react-form';
 import { toastr } from 'react-redux-toastr'
 
 const styles = {
+    base: {
+        height: 'calc(100vh - 64px)'
+    },
     button: {
         marginTop: '30px'
     }
@@ -21,7 +24,6 @@ class PostJobForm extends Component {
     }
 
     handleSubmit() {
-        //console.log('Hello');
         toastr.success('Job has been created !');
         //this.refs.postJobForm.submit()
     }
