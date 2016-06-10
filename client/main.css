@@ -1,0 +1,9 @@
+.flexContainer {
+    display: flex;
+}
+
+.boxItemCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
