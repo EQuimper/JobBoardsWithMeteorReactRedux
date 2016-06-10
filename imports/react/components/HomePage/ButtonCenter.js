@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import RaisedButton from 'material-ui/RaisedButton';
 
 const styles = {
@@ -16,7 +17,7 @@ const ButtonCenter = () => (
             <RaisedButton label="Find a Job" primary={true} />
         </div>
         <div style={styles.button}>
-            <RaisedButton label="Post a Job" />
+            <Link to={'post-job'}><RaisedButton label="Post a Job" /></Link>
         </div>
     </div>
 );
